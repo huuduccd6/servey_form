@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Tên</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="nhập tên" required="">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="nhập Email" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Tuổi</label>
+          <input type="number" name="age" id="number" min="1" max="100" class="form-control" placeholder="nhập tuổi">
+        </div>
+        <div class="form-group">
+          <p>Bạn có hay ra công viên?</p>
+          <select id="dropdown" name="name" class="form-control" required="">
+            <option disabled="" selected="" value="">Lựa chọn</option>
+            <option value="sometime">Đôi khi</option>
+            <option value="usually">Thường xuyên</option>
+            <option value="other">Khác</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Bạn đi cùng ai?</p>
+          <label>
+            <input name="who-with" value="friend" type="radio" class="input-radio" checked="">Bạn bè</label>
+          <label>
+            <input name="who-with" value="Family" type="radio" class="input-radio">Gia đình</label>
+
+          <label><input name="who-with" value="alone" type="radio" class="input-radio">Đi một mình</label>
+        </div>
+
+        <div class="form-group">
+          <p>Mục đích bạn ra công viên là gì?</p>
+          <select id="intention" name="intention" class="form-control" required="">
+            <option disabled="" selected="" value="">Lựa chọn</option>
+            <option value="pexercise">Tập thể dục</option>
+            <option value="walk">Đi dạo</option>
+            <option value="other">Khác</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Bạn mong muốn một công viên như nào?
+          </p>
+          <label><input name="zoo" value="tree" type="checkbox" class="input-checkbox">Có nhiều cây xanh</label>
+          <label><input name="zoo" value="lake" type="checkbox" class="input-checkbox">Có hồ rộng</label>
+          <label><input name="zoo" value="chair" type="checkbox" class="input-checkbox">Có nhiều ghế đá</label>
+        </div>
+
+        <div class="form-group">
+          <p>Bổ sung ý bổ sung:</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Để lại bình luận..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  
+  </body>
+</html>
